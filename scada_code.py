@@ -71,8 +71,8 @@ with open(stationfilename, 'w') as f:
     f.write(f"*  Creation Date/Time:  {now}\n")
     f.write("****************************************************************\n")
     f.write("*             Order  Key             Name                AOR\n")
-    f.write("*             ----  -----   --------------------------   ---\n")
-    f.write("*  2 STATION   0     3             4                      13\n")
+    f.write("*             ----  -----   --------------------------------\n")
+    f.write("2 STATION      0      3               4                      13\n")
     f.write("*---------------------------------------------------------------\n")
 
     for index, row in df_station.iterrows():
@@ -309,7 +309,7 @@ icaddress_format = "{:<20}"
 with open(output_status_name, 'w') as f:
     f.write('*         Type  Key          Name                                      Stn   AOR               pState   Norm   AlarmGroup   ICAddress\n')
     f.write('*         ----  ---          ----                                      ---   ---               ------   ----   ----------   ---------\n')
-    f.write('4 STATUS  (1)   (3)          (4)                                       (5)   (10)              (19)     (49)   (29)         (41)\n')
+    f.write('4 STATUS   1     3            4                                         5     10                19      49      29            41\n')
 
     for i in range(len(df_status)):
         f.write(indent_format.format('') + 
