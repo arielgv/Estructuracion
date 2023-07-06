@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1228]:
+# In[1]:
 
 
 import pandas as pd
@@ -25,14 +25,14 @@ import numpy as np
 
 # The .str.rstrip() method is widely used since many fields (almost all of them) have their value ending with two blank spaces.
 
-# In[1229]:
+# In[5]:
 
 
 #Input Filename (default = Station.csv)
 InputStationFile = "Station.csv"
 
 
-# In[1230]:
+# In[6]:
 
 
 df = pd.read_csv(InputStationFile, skipinitialspace=True)
@@ -71,8 +71,8 @@ with open(stationfilename, 'w') as f:
     f.write(f"*  Creation Date/Time:  {now}\n")
     f.write("****************************************************************\n")
     f.write("*             Order  Key             Name                AOR\n")
-    f.write("*             ----  -----   --------------------------------\n")
-    f.write("2 STATION      0      3               4                      13\n")
+    f.write("*             ----  -----   --------------------------   ---\n")
+    f.write("*  2 STATION   0     3             4                      13\n")
     f.write("*---------------------------------------------------------------\n")
 
     for index, row in df_station.iterrows():
@@ -309,7 +309,7 @@ icaddress_format = "{:<20}"
 with open(output_status_name, 'w') as f:
     f.write('*         Type  Key          Name                                      Stn   AOR               pState   Norm   AlarmGroup   ICAddress\n')
     f.write('*         ----  ---          ----                                      ---   ---               ------   ----   ----------   ---------\n')
-    f.write('4 STATUS   1     3            4                                         5     10                19      49      29            41\n')
+    f.write('4 STATUS  (1)   (3)          (4)                                       (5)   (10)              (19)     (49)   (29)         (41)\n')
 
     for i in range(len(df_status)):
         f.write(indent_format.format('') + 
@@ -368,18 +368,25 @@ with open(output_status_name, 'w') as f:
 # ICAddress (66)  : It will be declared as NaN.
 # 
 # NominalHiLimits (77,4):  column Alm_unrHi in Analog.csv , named in this df:  Nominal_HiLim
+#  *Edited:  NominalHiLimits (77:4): RENAMED TO HiLim[1]  (Rsnblty)
 # 
 # NominalLowLimits (78,4):  column Alm_unrLo in Analog.csv  , named in this df: Nominal_LoLim
+#  *Edited: RENAMED TO LoLim[1]   (Rsnblty)
+# 
+#  ADDED:NominalHiLimits (77:0-3): Column Alm_preHi in Analog.csv, named in this df: HiLim[0]    (High)
+#  ADDED:NominalLowLimits (78:0-3): Colum Aim_preLo in Analog.csv, named in this df: LoLim[0]    (Low)
+#  
+#     
 #    
 
-# In[1249]:
+# In[7]:
 
 
 #Data CSV Name entry
 analog_file = "Analog.csv"
 
 
-# In[1250]:
+# In[8]:
 
 
 df_analog = pd.read_csv(analog_file)
@@ -398,8 +405,14 @@ df_new['Name'] = df_analog['Name  '].str.replace(',',' ') + " " + df_analog['Des
 df_new['AOR'] = df_analog['Zones  ']
 df_new['AlarmGrp'] = 1
 df_new['ICAddress'] = "NaN"
-df_new['Nominal_HiLim'] = df_analog['Alm_unrHi  ']
-df_new['Nominal_LoLim'] = df_analog['Alm_unrLo  ']
+df_new['Nominal_HiLim'] = df_analog['Alm_unrHi  '] #HiLim[0] -> Rsnblty
+df_new['Nominal_LoLim'] = df_analog['Alm_unrLo  '] #LoLim[0] -> Rsnblty
+
+#edited
+#----
+df_new['Nominal_HiLim1'] = df_analog['Alm_preHi  '] #HiLim[1] -> High
+df_new['Nominal_LoLim1'] = df_analog['Alm_preLo  '] #LoLim[1] -> Low
+#----
 
 def keep_decimal_precision(val):
     try:
@@ -418,7 +431,7 @@ df_new['pScale EU_Hi'] = df_analog['EU_Hi  ']
 
 # # STN 
 
-# In[1251]:
+# In[9]:
 
 
 df_analog['Key'] = df_analog['Name  '].str.split(',').str[0].str.strip()
@@ -436,7 +449,7 @@ for i in range(len(df_analog)):
 df_new['Stn'] = stn_values
 
 
-# In[1252]:
+# In[10]:
 
 
 df_new
@@ -444,14 +457,14 @@ df_new
 
 # # KEY
 
-# In[1253]:
+# In[11]:
 
 
 key_values = []
 xx_yyy_counters = {}
 
 
-# In[1254]:
+# In[12]:
 
 
 for i in range(len(df_new)):
@@ -481,28 +494,34 @@ for i in range(len(df_new)):
 df_new['Key'] = key_values
 
 
-# In[1255]:
+# In[13]:
 
 
 df_new
 
 
-# In[1256]:
+# In[14]:
 
 
-df_new = df_new[['Type', 'Key', 'Name', 'Stn', 'AOR', 'Nominal_HiLim', 'Nominal_LoLim', 'pScale EU_Hi', 'AlarmGrp']].copy()
+df_new = df_new[['Type', 'Key', 'Name', 'Stn', 'AOR', 'Nominal_HiLim', 'Nominal_HiLim1', 'Nominal_LoLim', 'Nominal_LoLim1', 'pScale EU_Hi', 'AlarmGrp']].copy()
 df_new['ICAddress'] = "NaN"
+
+
+# In[15]:
+
+
+df_new
 
 
 # Output Filename:
 
-# In[1257]:
+# In[16]:
 
 
 output_analog_name = 'AnalogOutput.dat'
 
 
-# In[1258]:
+# In[37]:
 
 
 indent_format = "{:<10}" 
@@ -513,7 +532,9 @@ name_format = "{:<41}"
 stn_format = "{:<6}"
 aor_format = "{:<17}"
 nominal_hilim_format = "{:<16}"
-nominal_lolim_format = "{:<16}"
+nominal_hilim1_format = "{:<16}"
+nominal_lolim_format = "{:<19}"
+nominal_lolim1_format = "{:<12}"
 alarmgroup_format = "{:<13}"
 icaddress_format = "{:<20}"
 pscale_format = "{:<15}"
@@ -521,9 +542,9 @@ eu_hi_format = "{:<20}"
 
 with open(output_analog_name, 'w') as f:
    
-    f.write('*         Type  Key          Name                                          Stn   AOR                Nominal_HiLim   Nominal_LoLim   AlarmGroup   pScale(EU_Hi)  ICAddress\n')
-    f.write('*         ----  ---          ----                                          ---   ---                -------------   -------------   ----------   -------------  ---------\n')
-    f.write('5 ANALOG  (1)   (3)          (4)                                           (5)   (10)               (77:4)          (78:4)          (42)         (24)           (66)\n')
+    f.write('*         Type  Key          Name                                          Stn   AOR                HiLim[0](High)   HiLim[1](Rsnblty)  LoLim[0](Low)   LoLim[1](Rsnblty)  AlarmGroup   pScale(EU_Hi)  ICAddress\n')
+    f.write('*         ----  ---          ----                                          ---   ---                --------------   -----------------  -------------   -----------------  ----------   -------------  ---------\n')
+    f.write('5 ANALOG  (1)   (3)          (4)                                           (5)   (10)               (77,0)           (77,4)             (78,0)          (78,4)             (42)         (24)           (66)\n')
 
     
     for i in range(len(df_new)):
@@ -541,10 +562,28 @@ with open(output_analog_name, 'w') as f:
                 aor_format.format(str(df_new.loc[i, 'AOR'])) + 
                 indent2.format('')+
                 indent2.format('') + 
+                nominal_hilim1_format.format(str(df_new.loc[i, 'Nominal_HiLim1']))+
+                indent2.format('')+
                 nominal_hilim_format.format(str(df_new.loc[i, 'Nominal_HiLim'])) +
+                indent2.format('')+
+                indent2.format('')+
+                indent2.format('')+
+                nominal_lolim1_format.format(str(df_new.loc[i, 'Nominal_LoLim1']))+
+                
+                indent2.format('')+
+                indent2.format('')+
+                indent2.format('')+
+                indent2.format('')+
                 nominal_lolim_format.format(str(df_new.loc[i, 'Nominal_LoLim'])) +
+
                 alarmgroup_format.format(str(df_new.loc[i, 'AlarmGrp'])) +
                 pscale_format.format(df_new.loc[i, 'pScale EU_Hi']) +
                
                 icaddress_format.format(df_new.loc[i, 'ICAddress']) + '\n')
+
+
+# In[ ]:
+
+
+
 
