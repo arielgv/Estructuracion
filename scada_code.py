@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 import pandas as pd
@@ -25,14 +25,14 @@ import numpy as np
 
 # The .str.rstrip() method is widely used since many fields (almost all of them) have their value ending with two blank spaces.
 
-# In[5]:
+# In[ ]:
 
 
 #Input Filename (default = Station.csv)
 InputStationFile = "Station.csv"
 
 
-# In[6]:
+# In[ ]:
 
 
 df = pd.read_csv(InputStationFile, skipinitialspace=True)
@@ -54,14 +54,14 @@ print(df_station)
 
 # # Select Output name: (default: StationOutput.dat)
 
-# In[1231]:
+# In[ ]:
 
 
 #Output:
 stationfilename = "StationOutput.dat"
 
 
-# In[1232]:
+# In[ ]:
 
 
 now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
@@ -126,21 +126,21 @@ with open(stationfilename, 'w') as f:
 # 
 # (41) ICAddress : Refer to documentation. This script leaves it in blank
 
-# In[1233]:
+# In[ ]:
 
 
 #Input filename(default: "Status.csv")
 InputStatusFile = "Status.csv"
 
 
-# In[1234]:
+# In[ ]:
 
 
 status_df = pd.read_csv(InputStatusFile)
 df_status = pd.DataFrame()
 
 
-# In[1235]:
+# In[ ]:
 
 
 df_status['Type'] = np.where(status_df['Open_B  '] == '12  ', 2, np.where(status_df['Telem_A  '].replace('  ', np.nan).notna(), 1, 5))
@@ -153,7 +153,7 @@ df_status['AlarmGroup'] = 1
 df_status['ICAddress'] = np.nan
 
 
-# In[1236]:
+# In[ ]:
 
 
 df_status
@@ -164,7 +164,7 @@ df_status
 # This code strips the Name column in status and search the matching row Key in Station Dataframe
 # then, it reads the Order column value and assign this to the Stn column
 
-# In[1237]:
+# In[ ]:
 
 
 status_df['Key'] = status_df['Name  '].str.split(',').str[0].str.strip()  # make sure no blank spaces are in the begin & end of the name
@@ -172,7 +172,7 @@ df_station['Key'] = df_station['Key'].str.replace('"', '')
 stn_values = []  #list for store stn values
 
 
-# In[1238]:
+# In[ ]:
 
 
 for i in range(len(status_df)):
@@ -184,7 +184,7 @@ for i in range(len(status_df)):
 df_status['Stn'] = stn_values
 
 
-# In[1239]:
+# In[ ]:
 
 
 df_status
@@ -193,7 +193,7 @@ df_status
 # Replacement case: Pseudo Points.
 # IF stn = 054 (PS. Pseudo points.) Set type to 8 .   And then set XX Value to 12
 
-# In[1240]:
+# In[ ]:
 
 
 df_status.loc[df_status['Name'].str.startswith("PS"), 'Type'] = 8
@@ -212,14 +212,14 @@ for i in range(len(df_status)):
 
 # # KEY
 
-# In[1241]:
+# In[ ]:
 
 
 key_values = []
 xx_yyy_counters = {}  # creating a dict to store and count every YYY. It's used for a incremental ZZZ
 
 
-# In[1242]:
+# In[ ]:
 
 
 for i in range(len(df_status)):
@@ -252,13 +252,13 @@ for i in range(len(df_status)):
     key_values.append(xx + yyy + zz)
 
 
-# In[1243]:
+# In[ ]:
 
 
 df_status['Key'] = key_values
 
 
-# In[1244]:
+# In[ ]:
 
 
 #obtaining and showing the counting of Types.
@@ -266,14 +266,14 @@ type_counts = df_status['Type'].value_counts()
 print(type_counts)
 
 
-# In[1245]:
+# In[ ]:
 
 
 new_order = ['Type','Key','Name','Stn','AOR','pState','Norm','AlarmGroup','ICAddress']
 df_status = df_status[new_order]
 
 
-# In[1246]:
+# In[ ]:
 
 
 df_status
@@ -283,13 +283,13 @@ df_status
 
 # # OUTPUT TO DAT FILE :
 
-# In[1247]:
+# In[ ]:
 
 
 output_status_name = 'StatusOutput.dat'
 
 
-# In[1248]:
+# In[ ]:
 
 
 #Width definition. 
@@ -379,14 +379,14 @@ with open(output_status_name, 'w') as f:
 #     
 #    
 
-# In[7]:
+# In[ ]:
 
 
 #Data CSV Name entry
 analog_file = "Analog.csv"
 
 
-# In[8]:
+# In[ ]:
 
 
 df_analog = pd.read_csv(analog_file)
@@ -405,14 +405,54 @@ df_new['Name'] = df_analog['Name  '].str.replace(',',' ') + " " + df_analog['Des
 df_new['AOR'] = df_analog['Zones  ']
 df_new['AlarmGrp'] = 1
 df_new['ICAddress'] = "NaN"
-df_new['Nominal_HiLim'] = df_analog['Alm_unrHi  '] #HiLim[0] -> Rsnblty
-df_new['Nominal_LoLim'] = df_analog['Alm_unrLo  '] #LoLim[0] -> Rsnblty
+
+
+#df_new['Nominal_HiLim'] = df_analog['Alm_unrHi  '] #HiLim[0] -> Rsnblty
+#df_new['Nominal_LoLim'] = df_analog['Alm_unrLo  '] #LoLim[0] -> Rsnblty
 
 #edited
 #----
-df_new['Nominal_HiLim1'] = df_analog['Alm_preHi  '] #HiLim[1] -> High
-df_new['Nominal_LoLim1'] = df_analog['Alm_preLo  '] #LoLim[1] -> Low
+#df_new['Nominal_HiLim1'] = df_analog['Alm_preHi  '] #HiLim[1] -> High
+#df_new['Nominal_LoLim1'] = df_analog['Alm_preLo  '] #LoLim[1] -> Low
+############
+############
+
+
+
+# In[ ]:
+
+
+# Convierte a float, convirtiendo errores a NaN
+df_copy = df_analog.copy()
+
+# Función para convertir '0  ' o '  ' en 0
+def convert_zero(val):
+    return 0 if val == '0  ' or val == '  ' else val
+
+# Aplicar la función a todo el DataFrame
+df_copy = df_copy.applymap(convert_zero)
+
+# Convierte a float, convirtiendo errores a NaN
+df_copy['Alm_unrHi  '] = pd.to_numeric(df_copy['Alm_unrHi  '], errors='coerce')
+df_copy['Alm_unrLo  '] = pd.to_numeric(df_copy['Alm_unrLo  '], errors='coerce')
+df_copy['Alm_preHi  '] = pd.to_numeric(df_copy['Alm_preHi  '], errors='coerce')
+df_copy['Alm_preLo  '] = pd.to_numeric(df_copy['Alm_preLo  '], errors='coerce')
+
+# Luego reemplaza los valores basados en las condiciones
+df_copy.loc[df_copy['Alm_unrHi  '] == 0.0, 'Alm_unrHi  '] = 999999.0
+df_copy.loc[df_copy['Alm_unrLo  '] == 0.0, 'Alm_unrLo  '] = -999999.0
+
+# Para Alm_preHi y Alm_preLo, necesitamos considerar dos condiciones:
+df_copy.loc[(df_copy['Alm_unrLo  '].notna()) & (df_copy['Alm_unrLo  '] != -999999.0), 'Alm_preHi  '] = 999998.0
+df_copy.loc[(df_copy['Alm_unrHi  '].notna()) & (df_copy['Alm_unrHi  '] != 999999.0), 'Alm_preLo  '] = -999998.0
+
+
+df_new['Nominal_HiLim'] = df_copy['Alm_unrHi  '] 
+df_new['Nominal_LoLim'] = df_copy['Alm_unrLo  ']
+df_new['Nominal_HiLim1'] = df_copy['Alm_preHi  '] 
+df_new['Nominal_LoLim1'] = df_copy['Alm_preLo  ']
 #----
+
 
 def keep_decimal_precision(val):
     try:
@@ -427,11 +467,28 @@ def keep_decimal_precision(val):
 df_analog['EU_Hi  '] = df_analog['EU_Hi  '].apply(keep_decimal_precision)
 df_new['pScale EU_Hi'] = df_analog['EU_Hi  ']
 
+df_copy['Alm_unrHi  '] = df_copy['Alm_unrHi  '].apply(keep_decimal_precision)
+df_copy['Alm_unrLo  '] = df_copy['Alm_unrLo  '].apply(keep_decimal_precision)
+df_copy['Alm_preHi  '] = df_copy['Alm_preHi  '].apply(keep_decimal_precision)
+df_copy['Alm_preLo  '] = df_copy['Alm_preLo  '].apply(keep_decimal_precision)
+
+
+df_new['Nominal_HiLim'] = df_copy['Alm_unrHi  '] 
+df_new['Nominal_LoLim'] = df_copy['Alm_unrLo  ']
+df_new['Nominal_HiLim1'] = df_copy['Alm_preHi  '] 
+df_new['Nominal_LoLim1'] = df_copy['Alm_preLo  ']
+
+
+
+# In[ ]:
+
+
+df_new
 
 
 # # STN 
 
-# In[9]:
+# In[ ]:
 
 
 df_analog['Key'] = df_analog['Name  '].str.split(',').str[0].str.strip()
@@ -449,7 +506,7 @@ for i in range(len(df_analog)):
 df_new['Stn'] = stn_values
 
 
-# In[10]:
+# In[ ]:
 
 
 df_new
@@ -457,14 +514,14 @@ df_new
 
 # # KEY
 
-# In[11]:
+# In[ ]:
 
 
 key_values = []
 xx_yyy_counters = {}
 
 
-# In[12]:
+# In[ ]:
 
 
 for i in range(len(df_new)):
@@ -494,20 +551,20 @@ for i in range(len(df_new)):
 df_new['Key'] = key_values
 
 
-# In[13]:
+# In[ ]:
 
 
 df_new
 
 
-# In[14]:
+# In[ ]:
 
 
 df_new = df_new[['Type', 'Key', 'Name', 'Stn', 'AOR', 'Nominal_HiLim', 'Nominal_HiLim1', 'Nominal_LoLim', 'Nominal_LoLim1', 'pScale EU_Hi', 'AlarmGrp']].copy()
 df_new['ICAddress'] = "NaN"
 
 
-# In[15]:
+# In[ ]:
 
 
 df_new
@@ -515,13 +572,13 @@ df_new
 
 # Output Filename:
 
-# In[16]:
+# In[ ]:
 
 
-output_analog_name = 'AnalogOutput.dat'
+output_analog_name = 'AnalogOutput2.dat'
 
 
-# In[37]:
+# In[ ]:
 
 
 indent_format = "{:<10}" 
