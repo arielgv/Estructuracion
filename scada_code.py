@@ -78,7 +78,7 @@ with open(stationfilename, 'w') as f:
     for index, row in df_station.iterrows():
         f.write("{:<5}{:<5}{:<5}{:<5}{:<8}{:<30}{:<6}\n".format
                 ("", row['Order'],"", row['Order'], row['Key'], row['Name'], row['AOR']))
-
+    f.write('0\n*\n0') 
 
 # # END STATION
 
@@ -309,7 +309,7 @@ icaddress_format = "{:<20}"
 with open(output_status_name, 'w') as f:
     f.write('*         Type  Key          Name                                      Stn   AOR               pState   Norm   AlarmGroup   ICAddress\n')
     f.write('*         ----  ---          ----                                      ---   ---               ------   ----   ----------   ---------\n')
-    f.write('4 STATUS  (1)   (3)          (4)                                       (5)   (10)              (19)     (49)   (29)         (41)\n')
+    f.write('4 STATUS  1     3            4                                         5     10                19       49     29           41\n')
 
     for i in range(len(df_status)):
         f.write(indent_format.format('') + 
@@ -330,7 +330,7 @@ with open(output_status_name, 'w') as f:
                 norm_format.format(df_status.loc[i, 'Norm']) +
                 alarmgroup_format.format(df_status.loc[i, 'AlarmGroup']) +
                 icaddress_format.format(df_status.loc[i, 'ICAddress']) + '\n')
-
+    f.write('0\n*\n0') 
 
 # # END STATUS
 
@@ -601,7 +601,7 @@ with open(output_analog_name, 'w') as f:
    
     f.write('*         Type  Key          Name                                          Stn   AOR                HiLim[0](High)   HiLim[1](Rsnblty)  LoLim[0](Low)   LoLim[1](Rsnblty)  AlarmGroup   pScale(EU_Hi)  ICAddress\n')
     f.write('*         ----  ---          ----                                          ---   ---                --------------   -----------------  -------------   -----------------  ----------   -------------  ---------\n')
-    f.write('5 ANALOG  (1)   (3)          (4)                                           (5)   (10)               (77,0)           (77,4)             (78,0)          (78,4)             (42)         (24)           (66)\n')
+    f.write('5 ANALOG  1     3            4                                             5     10                 77,0              77,4              78,0            78,4               42           24           (66)\n')
 
     
     for i in range(len(df_new)):
@@ -637,7 +637,7 @@ with open(output_analog_name, 'w') as f:
                 pscale_format.format(df_new.loc[i, 'pScale EU_Hi']) +
                
                 icaddress_format.format(df_new.loc[i, 'ICAddress']) + '\n')
-
+    f.write('0\n*\n0') 
 
 # In[ ]:
 
