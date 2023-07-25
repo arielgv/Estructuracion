@@ -1,0 +1,84 @@
+﻿Name  ,Desc  ,Zones  ,PreSuffx  ,Comm_Line  ,RTU_Number  ,Scan_PT  ,Sev_State0  ,Sev_State1  ,Sev_State2  ,Sev_State3  ,Vcode_State0  ,Vcode_State1  ,Vcode_State2  ,Vcode_State3  ,Alarm_Task  ,Alarm_Fmt  ,APoint_01  ,APoint_02  ,APoint_03  ,APoint_04  ,APoint_05  ,APoint_06  ,APoint_07  ,APoint_08  ,APoint_09  ,APoint_10  ,Param_01  ,Param_02  ,Param_03  
+"LA,RTU     ",LAKE ASBURY REMOTE SEL  ,4  ,0  ,11  ,33  ,"LA  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"LA  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"MN,RTU     ",MANNVILLE REMOTE SEL  ,6  ,0  ,6  ,17  ,"MN  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"MN  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SN,RTU     ",SANDERSON RTU SEL  ,3  ,0  ,3  ,23  ,"SN  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"SN  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"WE,RTU     ",WESCONNETT REMOTE SEL  ,4  ,0  ,4  ,43  ,"WE  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"WE  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"FW,RTU     ",FW RTU SEL  ,5  ,0  ,5  ,21  ,"FW  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"FW  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"BY,RTU     ",BRICKYARD RTU SEL  ,4  ,0  ,4  ,55  ,"BY  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"BY  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"GC,RTU     ",GREEN COVE RTU SEL  ,1 2 3 4 5 6 7 8  ,0  ,11  ,39  ,"GC  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"GC  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"BW,RTU     ",BELAIR WEST REMOTE SEL  ,4  ,0  ,4  ,25  ,"BW  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"BW  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU4    ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,4  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU7    ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,7  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"DI,RTU     ",DR INLET REMOTE SEL  ,3  ,0  ,3  ,45  ,"DI  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"DI  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"ES,RTU     ",ELECTRONIC SHOP REMOTE  ,2  ,0  ,1  ,61  ,"ES  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"ES  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"DB,RTU     ",DOUBLE BRANCH REMOTE SEL  ,3  ,0  ,3  ,7  ,"DB  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"DB  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SG,RTU     ",SG RTU (PHONE LINE)  ,7  ,0  ,7  ,37  ,"SG  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"SG  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"BR,RTU     ",BROOKER REMOTE SEL  ,5  ,0  ,5  ,7  ,"BR  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"BR  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"OP,RTU     ",ORANGE PARK REMOTE SEL  ,4  ,0  ,4  ,23  ,"OP  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"OP  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"BL,RTU     ",BLAND REMOTE SEL  ,5  ,0  ,5  ,15  ,"BL  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"BL  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SS,RTU     ",SALT SPRINGS RTU SEL  ,7 8  ,0  ,7  ,27  ,"SS  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"SS  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"WO,RTU     ",WATER OAK REMOTE SEL  ,3  ,0  ,3  ,31  ,"WO  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"WO  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SA,RTU     ",SATSUMA RTU SEL  ,6  ,0  ,6  ,23  ,"SA  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"SA  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"FM,RTU     ",FT MCCOY REMOTE  ,7  ,0  ,7  ,21  ,"FM  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"FM  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"FA,RTU     ",FARNSWORTH REMOTE SEL  ,5  ,0  ,5  ,9  ,"FA  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"FA  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"ME,RTU     ",MELROSE REMOTE  ,1  ,0  ,1  ,11  ,"ME  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"ME  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"LY,RTU     ",LYNNE RTU SEL  ,7  ,0  ,7  ,47  ,"LY  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"LY  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU11   ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,29  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"DB,RTU2    ",DOUBLE BRANCH VIRT RTU  ,3  ,0  ,3  ,8  ,"DB  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"GT,RTU     ",GEORGETOWN RTU SEL  ,8  ,0  ,7  ,29  ,"GT  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"GT  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"HA,RTU     ",HAMMOND RTU SEL  ,7  ,0  ,7  ,33  ,"HA  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"HA  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"AC,RTU     ",ARCHER REMOTE SEL  ,5  ,0  ,5  ,23  ,"AC  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"AC  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"G5,RTU     ",LAKE BUTLER GEN REMOTE  ,3  ,0  ,3  ,61  ,"G5  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"G5  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"G11,RTU     ",SPARTON GEN RTU AT SG  ,7  ,0  ,12  ,49  ,"G11 ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"G11 ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"AB,RTU     ",ASTOR SWITCHING RTU  ,1  ,0  ,7  ,25  ,"AB  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"AB  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU5    ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,5  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"MX,RTU     ",MAXVILLE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,3  ,27  ,"MX  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"MX  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"WH,RTU     ",WACAHOOTA REMOTE  ,5  ,0  ,5  ,25  ,"WH  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"WH  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"BC,RTU     ",BC REMOTE  ,3  ,0  ,3  ,57  ,"BC  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"BC  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"LC,RTU     ",LC RTU (LC T-1 LINE)  ,2  ,0  ,2  ,5  ,"LC  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"LC  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"GP,RTU     ",GEORGIA PACIFIC SEL  ,6  ,0  ,6  ,29  ,"GP  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"GP  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU12   ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,12  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU-22  ",WALDO   REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,99  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU     ",NEW RIVER REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,0  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"TU,RTU     ",TU RTU (LC T-1 LINE)  ,3  ,0  ,3  ,9  ,"TU  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"TU  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"HW,RTU     ",HAWTHORNE REMOTE SEL  ,6  ,0  ,6  ,7  ,"HW  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"HW  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"PP,RTU     ",POMONA PARK REMOTE  ,7  ,0  ,7  ,23  ,"PP  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"PP  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU6    ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,6  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"GL,RTU     ",GRIFFIS LOOP REMOTE  ,8  ,0  ,1  ,13  ,"GL  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"GL  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU3    ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,3  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"RV,RTU     ",RIVERVIEW REMOTE SEL  ,6  ,0  ,6  ,41  ,"RV  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"RV  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"FL,RTU     ",FLORAHOME REMOTE  ,1  ,0  ,1  ,21  ,"FL  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"FL  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"PH,RTU     ",PHIFER REMOTE  ,5  ,0  ,5  ,5  ,"PH  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"PH  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"CA,RTU     ",CARA REMOTE SEL  ,5  ,0  ,5  ,13  ,"CA  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"CA  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"WB,RTU     ",WALDO BKR RTU  ,1  ,0  ,1  ,17  ,"FB  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"FB  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"FB,RTU     ",FT MCCOY SW RTU  ,6  ,0  ,6  ,43  ,"FB  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"FB  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"HB,RTU     ",HAWTHORNE SW RTU  ,6  ,0  ,6  ,21  ,"HB  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"HB  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"WS,RTU     ",WORTHINGTON REMOTE  ,5  ,0  ,5  ,51  ,"WS  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"WS  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU007  ",NEW RIVER REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,97  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU61   ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,61  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU--   ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,11  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"KH,RTU     ",KEYSTONE HEIGHTS REMOTE  ,1  ,0  ,1  ,9  ,"KH  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"KH  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"G10,RTU     ",PUTNAM GEN RTU AT FR  ,8  ,0  ,6  ,37  ,"G10 ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"G10 ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU41   ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,41  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"FR,RTU     ",FRANCIS REMOTE  ,6  ,0  ,6  ,35  ,"FR  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"FR  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"FI,RTU     ",FLEMING ISLAND REMOTESEL  ,1 2 3 4 5 6 7 8  ,0  ,4  ,59  ,"FI  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"FI  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"NR,RTU     ",NEW RIVER REMOTE  ,3  ,0  ,3  ,13  ,"NR  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"NR  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"OPS,RTU     ",OPS DOORS REMOTE  ,7 8  ,0  ,8  ,43  ,"OPS ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,"OPS ,PERCT  ","OPS ,TIM  ","OPS ,BCH  ","OPS ,SOEPT  ","OPS ,POLERR  ",  ,  ,  ,  ,  ,0  ,10  ,0  
+"AL,RTU     ",ALACHUA REMOTE SEL  ,5  ,0  ,5  ,3  ,"AL  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"AL  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"HL,RTU     ",HAILE REMOTE  ,5  ,0  ,5  ,19  ,"HL  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"HL  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU8    ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,8  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"BN,RTU     ",BN RTU (LC T-1 LINE)  ,2  ,0  ,2  ,47  ,"BN  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"BN  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"MI,RTU     ",MIDDLEBURG REMOTE  ,3  ,0  ,3  ,35  ,"MI  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"MI  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SPR,RTU10   ",SPARE REMOTE  ,1 2 3 4 5 6 7 8  ,0  ,0  ,10  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"AS,RTU     ",ASTOR DIST REMOTE SEL  ,7  ,0  ,7  ,35  ,"AS  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"AS  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"RD,RTU     ",RIDGEWOOD REMOTE  ,4  ,0  ,4  ,51  ,"RD  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"RD  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"RS,RTU     ",RUSSELL REMOTE SEL  ,4  ,0  ,11  ,57  ,"RS  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"RS  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"SECI,RTU02   ",CMDSQ 0 & 2-12  ,1 2 3 4 5 6 7  ,0  ,9  ,2  ,"SECI,EFSCAN  ",3  ,4  ,4  ,4  ,0  ,0  ,0  ,0  ,          ,185  ,"SECI,PERCOM  ","SECI,TIMOUT  ","SECI,SECERR  ","SECI,WRONG  ",  ,  ,  ,"SECI,TOLPOL  ",  ,  ,0  ,1  ,0  
+"SEL,RTU23   ",RTU NUMBER 23  ,2  ,0  ,2  ,23  ,"SEL ,FSCAN  ",3  ,4  ,4  ,4  ,0  ,0  ,0  ,0  ,          ,185  ,"SEL ,PERCOM  ","SEL ,TIMOUT  ","SEL ,SECERR  ","SEL ,WRONG  ",  ,  ,  ,"SEL ,TOLPOL  ",  ,  ,0  ,1  ,0  
+"E2,RTU     ",ELECTRONIC SHOP REMOTE  ,2  ,0  ,1  ,63  ,"E2  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"E2  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"WA,RTU     ",WALDO REMOTE  ,1  ,0  ,1  ,3  ,"WA  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,"WA  ,SOEPT  ",  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"FSP,RTU     ",FSP VIRTUAL REMOTE SEL  ,3  ,0  ,3  ,32  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,0  ,0  
+"UCI,RTU     ",UCI VIRTUAL REMOTE SEL  ,3  ,0  ,3  ,33  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,0  ,0  
+"MOB,RTU     ",MOB VIRTUAL REMOTE SEL  ,7  ,0  ,4  ,24  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,0  ,0  
+"FI,RTU2    ",FLEMING ISLAND VIRT RTU  ,3  ,0  ,4  ,60  ,"FI  ,FS  ",3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,10  ,0  
+"G34,RTU     ",GC GEN 3&4 VIRTUAL RTU  ,3  ,0  ,11  ,41  ,  ,3  ,4  ,4  ,4  ,3  ,4  ,0  ,0  ,          ,185  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,0  ,0  ,0  

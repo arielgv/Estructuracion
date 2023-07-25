@@ -1,0 +1,14 @@
+Name  ,Desc  ,Zones  ,PreSuffx  ,Comm_Line  ,Comm_Device  ,Scan_Task  ,Retry_PT  ,Pri_Resp_TO  ,Pri_Time_BetScan  ,Alt_Resp_TO  ,Alt_Time_BetScan  ,Sev_State0  ,Sev_State1  ,Sev_State2  ,Sev_State3  ,Vcode_State0  ,Vcode_State1  ,Vcode_State2  ,Vcode_State3  ,Alarm_Task  ,Alarm_Fmt  ,APoint_01  ,APoint_02  ,APoint_03  ,APoint_04  ,APoint_05  ,Param_01  ,Param_02  ,Param_03  
+"OP,MASCO4  ",ORANGE PARK COMM LINE #4  ,4  ,0  ,4  ,          ,QUIC  ,"OP  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"OP  ,HRTBT4  ",  ,  ,  ,  ,9600  ,0  ,0  
+"KH,MASCO1  ",KEYSTONE COMM LINE #1  ,1  ,0  ,1  ,          ,QUIC  ,"KH  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"KH  ,HRTBT1  ",  ,  ,  ,  ,9600  ,0  ,0  
+"AC,MASCO5  ",AC COMM LINE #5 GVILLE  ,5  ,0  ,5  ,          ,QUIC  ,"AC  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"AC  ,HRTBT5  ",  ,  ,  ,  ,9600  ,0  ,0  
+"MN,MASCO6  ",MANNVILLE COMM LINE 6  ,6  ,0  ,6  ,          ,QUIC  ,"MN  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"MN  ,HRTBT6  ",  ,  ,  ,  ,9600  ,0  ,0  
+"SS,MASCO7  ",SALT SPRNGS COMM LINE 7  ,7  ,0  ,7  ,          ,QUIC  ,"SS  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"SS  ,HRTBT7  ",  ,  ,  ,  ,9600  ,0  ,0  
+"NR,MASCO3  ",NR COMM LINE 3 HILAND  ,3  ,0  ,3  ,          ,QUIC  ,"NR  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"NR  ,HRTBT3  ",  ,  ,  ,  ,9600  ,0  ,0  
+"OPS,TESCO8  ",OPS COMM LINE #8  ,1 2 3 4 5 6 7 8  ,0  ,8  ,          ,QUIC  ,"OPS ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"OPS ,HRTBT8  ",  ,  ,  ,  ,9600  ,0  ,0  
+"LC,MASCO2  ",LC COMM LINE 2  ,2  ,0  ,2  ,          ,QUIC  ,"LC  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"LC  ,HRTBT2  ",  ,  ,  ,  ,9600  ,0  ,0  
+"SECI,COMMO9  ",COMM LINE 9  ,1 2 3 4 5 6 7  ,0  ,9  ,          ,DNPS  ,"SECI,RC  ",30000  ,500  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"SECI,ACCFRZ  ","SECI,TIMDLY  ",  ,  ,  ,0  ,600  ,2000  
+"BR,MASC12  ",COMM LINE 12  ,1 2 3 4 5 6 7 8  ,0  ,12  ,          ,QUIC  ,"ES  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"ES  ,HRTB10  ",  ,  ,  ,  ,9600  ,0  ,0  
+"CA,MASC13  ",COMM LINE 13  ,1 2 3 4 5 6 7 8  ,0  ,13  ,          ,QUIC  ,"ES  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"ES  ,HRTB10  ",  ,  ,  ,  ,9600  ,0  ,0  
+"ES,MASC10  ",RS COMM LINE 10  ,1 2 3 4 5 6 7 8  ,0  ,10  ,          ,QUIC  ,"ES  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"ES  ,HRTB10  ",  ,  ,  ,  ,9600  ,0  ,0  
+"RS,MASC11  ",ES COMM LINE 11  ,2  ,0  ,11  ,          ,QUIC  ,"ES  ,RC  ",1000  ,50  ,0  ,0  ,3  ,4  ,4  ,4  ,1  ,2  ,0  ,0  ,  ,186  ,"ES  ,HRTB10  ",  ,  ,  ,  ,9600  ,0  ,0  
