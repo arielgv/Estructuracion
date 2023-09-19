@@ -1,0 +1,16 @@
+*         pFEP   Character   Stop_Bits       Name                            baudrate     ChannelResTimeoutMsec    PhysicalPort   Hostname     ChannelConnTimeout
+*         ----   ---------   ---------       -------------------------       --------     ---------------------    ------------   --------     ------------------
+ CHANNEL     1          13          14                              19             23                        24              25         30                     41
+          1      8           1               ORANGE PARK COMM LINE #4        9600         1000                     4              1            1000                
+          1      8           1               KEYSTONE COMM LINE #1           9600         1000                     1              1            1000                
+          1      8           1               AC COMM LINE #5 GVILLE          9600         1000                     5              1            1000                
+          1      8           1               MANNVILLE COMM LINE 6           9600         1000                     6              1            1000                
+          1      8           1               SALT SPRNGS COMM LINE 7         9600         1000                     7              1            1000                
+          1      8           1               NR COMM LINE 3 HILAND           9600         1000                     3              1            1000                
+          1      8           1               OPS COMM LINE #8                9600         1000                     8              1            1000                
+          1      8           1               LC COMM LINE 2                  9600         1000                     2              1            1000                
+          1      8           1               COMM LINE 9                     9600         30000                    9              1            30000               
+          1      8           1               COMM LINE 12                    9600         1000                     12             1            1000                
+          1      8           1               COMM LINE 13                    9600         1000                     13             1            1000                
+          1      8           1               RS COMM LINE 10                 9600         1000                     10             1            1000                
+          1      8           1               ES COMM LINE 11                 9600         1000                     11             1            1000                

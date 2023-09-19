@@ -1,0 +1,86 @@
+*         Indics   pCHANNEL_GROUP   Protocol        Name                            Address
+*         ------   --------------   --------        -------------------------       --------
+ RTU           0                2          3                                5             14
+          33       11               8               LAKE ASBURY REMOTE SEL          33          
+          17       6                8               MANNVILLE REMOTE SEL            17          
+          23       3                8               SANDERSON RTU SEL               23          
+          43       4                8               WESCONNETT REMOTE SEL           43          
+          21       5                8               FW RTU SEL                      21          
+          55       4                8               BRICKYARD RTU SEL               55          
+          39       11               8               GREEN COVE RTU SEL              39          
+          25       4                8               BELAIR WEST REMOTE SEL          25          
+          4        0                8               SPARE REMOTE                    4           
+          7        0                8               SPARE REMOTE                    7           
+          45       3                8               DR INLET REMOTE SEL             45          
+          61       1                8               ELECTRONIC SHOP REMOTE          61          
+          7        3                8               DOUBLE BRANCH REMOTE SEL        7           
+          37       7                8               SG RTU (PHONE LINE)             37          
+          7        5                8               BROOKER REMOTE SEL              7           
+          23       4                8               ORANGE PARK REMOTE SEL          23          
+          15       5                8               BLAND REMOTE SEL                15          
+          27       7                8               SALT SPRINGS RTU SEL            27          
+          31       3                8               WATER OAK REMOTE SEL            31          
+          23       6                8               SATSUMA RTU SEL                 23          
+          21       7                8               FT MCCOY REMOTE                 21          
+          9        5                8               FARNSWORTH REMOTE SEL           9           
+          11       1                8               MELROSE REMOTE                  11          
+          47       7                8               LYNNE RTU SEL                   47          
+          29       0                8               SPARE REMOTE                    29          
+          8        3                8               DOUBLE BRANCH VIRT RTU                      
+          29       7                8               GEORGETOWN RTU SEL              29          
+          33       7                8               HAMMOND RTU SEL                 33          
+          23       5                8               ARCHER REMOTE SEL               23          
+          61       3                8               LAKE BUTLER GEN REMOTE          61          
+          49       12               8               SPARTON GEN RTU AT SG           49          
+          25       7                8               ASTOR SWITCHING RTU             25          
+          5        0                8               SPARE REMOTE                    5           
+          27       3                8               MAXVILLE REMOTE                 27          
+          25       5                8               WACAHOOTA REMOTE                25          
+          57       3                8               BC REMOTE                       57          
+          5        2                8               LC RTU (LC T-1 LINE)            5           
+          29       6                8               GEORGIA PACIFIC SEL             29          
+          12       0                8               SPARE REMOTE                    12          
+          99       0                8               WALDO   REMOTE                  99          
+          0        0                8               NEW RIVER REMOTE                0           
+          9        3                8               TU RTU (LC T-1 LINE)            9           
+          7        6                8               HAWTHORNE REMOTE SEL            7           
+          23       7                8               POMONA PARK REMOTE              23          
+          6        0                8               SPARE REMOTE                    6           
+          13       1                8               GRIFFIS LOOP REMOTE             13          
+          3        0                8               SPARE REMOTE                    3           
+          41       6                8               RIVERVIEW REMOTE SEL            41          
+          21       1                8               FLORAHOME REMOTE                21          
+          5        5                8               PHIFER REMOTE                   5           
+          13       5                8               CARA REMOTE SEL                 13          
+          17       1                8               WALDO BKR RTU                   17          
+          43       6                8               FT MCCOY SW RTU                 43          
+          21       6                8               HAWTHORNE SW RTU                21          
+          51       5                8               WORTHINGTON REMOTE              51          
+          97       0                8               NEW RIVER REMOTE                97          
+          61       0                8               SPARE REMOTE                    61          
+          11       0                8               SPARE REMOTE                    11          
+          9        1                8               KEYSTONE HEIGHTS REMOTE         9           
+          37       6                8               PUTNAM GEN RTU AT FR            37          
+          41       0                8               SPARE REMOTE                    41          
+          35       6                8               FRANCIS REMOTE                  35          
+          59       4                8               FLEMING ISLAND REMOTESEL        59          
+          13       3                8               NEW RIVER REMOTE                13          
+          43       8                8               OPS DOORS REMOTE                43          
+          3        5                8               ALACHUA REMOTE SEL              3           
+          19       5                8               HAILE REMOTE                    19          
+          8        0                8               SPARE REMOTE                                
+          47       2                8               BN RTU (LC T-1 LINE)            47          
+          35       3                8               MIDDLEBURG REMOTE               35          
+          10       0                8               SPARE REMOTE                    10          
+          35       7                8               ASTOR DIST REMOTE SEL           35          
+          51       4                8               RIDGEWOOD REMOTE                51          
+          57       11               8               RUSSELL REMOTE SEL              57          
+          2        9                8               CMDSQ 0 & 2-12                  2           
+          23       2                8               RTU NUMBER 23                   23          
+          63       1                8               ELECTRONIC SHOP REMOTE          63          
+          3        1                8               WALDO REMOTE                    3           
+          32       3                8               FSP VIRTUAL REMOTE SEL          32          
+          33       3                8               UCI VIRTUAL REMOTE SEL          33          
+          24       4                8               MOB VIRTUAL REMOTE SEL          24          
+          60       4                8               FLEMING ISLAND VIRT RTU         60          
+          41       11               8               GC GEN 3&4 VIRTUAL RTU          41          
